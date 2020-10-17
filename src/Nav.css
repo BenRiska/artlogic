@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(232, 159, 140);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav > svg {
+  height: 35px;
+  fill: #fffee0;
+}
+
+.nav__links {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.nav__links > p {
+  padding-left: 20px;
+  font-size: small;
+  color: #fffee0;
+  font-weight: 600;
+  cursor: pointer;
+}

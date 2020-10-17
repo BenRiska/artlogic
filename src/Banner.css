@@ -1,0 +1,75 @@
+.banner {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner__slides {
+  flex: 1;
+  background-color: rgb(232, 159, 140);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.banner__slideImage {
+  position: relative;
+}
+
+.banner__slideImage > img {
+  object-fit: contain;
+  max-height: 1050px;
+}
+
+.banner__slideImage > p {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 110px;
+  width: 1000px;
+  text-align: center;
+  font-weight: 600;
+  color: #fffee0;
+}
+
+.banner__slideHeader {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.banner__slideHeader > span {
+  text-align: center;
+  font-size: 35px;
+  color: #fffee0;
+  font-weight: 600;
+}
+
+.banner__scroll {
+  padding: 35px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__scroll > .MuiSvgIcon-root {
+  font-size: 50px;
+  font-weight: 300;
+  color: darkgray;
+}

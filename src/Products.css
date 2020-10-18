@@ -2,7 +2,8 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1250px;
-  padding: 20px;
+  margin-top: 80px;
+  background-color: white;
 }
 
 .products__header {
@@ -62,4 +63,5 @@
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
+  margin-bottom: 130px;
 }

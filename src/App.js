@@ -3,6 +3,9 @@ import './App.css';
 import Nav from "./Nav"
 import Banner from "./Banner"
 import Products from "./Products"
+import GalleryPromo from "./GalleryPromo"
+import Stats from "./Stats"
+import ProductSlides from "./ProductSlides"
 
 function App() {
   return (
@@ -16,8 +19,11 @@ function App() {
       <div className="space">
       <Products/>
       {/* Gallery*/}
+      <GalleryPromo/>
       {/* Stats */}
+      <Stats/>
       {/* productSlides */}
+      <ProductSlides/>
       {/* Support */}
       {/* Contact */}
       {/* Footer */}

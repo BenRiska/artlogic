@@ -1,0 +1,35 @@
+.productSlides {
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+  margin-top: 200px;
+}
+
+.productSlide {
+  background: linear-gradient(180deg, #fff 0, #f8f8f8);
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.productSlide__content {
+  flex: 0.5;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1500px;
+}
+
+.productSlide__info > h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.productSlide__info > p {
+  color: darkgray;
+  line-height: 40px;
+}
+
+.productSlide_image > img {
+  max-height: 800px;
+}

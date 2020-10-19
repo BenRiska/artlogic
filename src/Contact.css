@@ -1,0 +1,96 @@
+.contact {
+  border-top: 1px solid lightgrey;
+}
+
+.contact__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact__content > h2 {
+  margin: 50px 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.form__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.form__inputs > input,
+.form__inputs > select {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0;
+  outline: none;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+form > textarea {
+  margin-top: 50px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__options {
+  margin-top: 30px;
+}
+
+.form__options > h4 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form__optionsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  max-width: 600px;
+  padding: 20px 0;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox > input {
+  margin-left: 8px;
+}
+
+.form__checkbox > label {
+  font-size: 14px;
+  padding-left: 4px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form__submit {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form__submit > button {
+  width: 800px;
+  max-width: 100%;
+  padding: 14px 40px;
+  background-color: black;
+  color: white;
+  margin-right: 30px;
+  font-weight: bold;
+  border: none;
+}
+
+.form__submit > p {
+  color: darkgray;
+  font-size: 13px;
+}

@@ -6,6 +6,8 @@ import Products from "./Products"
 import GalleryPromo from "./GalleryPromo"
 import Stats from "./Stats"
 import ProductSlides from "./ProductSlides"
+import Contact from "./Contact"
+import Footer from './Footer';
 
 function App() {
   return (
@@ -24,9 +26,10 @@ function App() {
       <Stats/>
       {/* productSlides */}
       <ProductSlides/>
-      {/* Support */}
       {/* Contact */}
+      <Contact/>
       {/* Footer */}
+      <Footer/>
       </div>
     </div>
   );

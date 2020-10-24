@@ -1,5 +1,20 @@
-.space {
-  position: absolute;
-  top: 100vh;
+.app {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: -100;
+  height: 100vh;
+}
+
+.space {
+  height: 100vh;
+}
+
+.wrapper-bg {
+  background-color: white;
 }

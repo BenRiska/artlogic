@@ -15,14 +15,16 @@
   justify-content: space-between;
 }
 
-.footer__links > div > a {
+.footer__links > div > a,
+.footer__links > div > p {
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.4);
   padding: 10px 0;
 }
 
-.footer__links > div > a > span {
+.footer__links > div > a > span,
+.footer__links > div > p > span {
   color: white;
 }
 

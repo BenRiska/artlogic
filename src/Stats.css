@@ -1,3 +1,7 @@
+.stats {
+  position: relative;
+}
+
 .stats__container {
   margin: 100px auto 200px auto;
   max-width: 800px;
@@ -12,6 +16,11 @@
   font-size: 80px;
   font-weight: 500;
   text-align: center;
+}
+
+.stats__counter {
+  font-size: 80px !important;
+  font-weight: 500 !important;
 }
 
 .stats__container > div > h2 > span {
@@ -32,17 +41,46 @@
   width: 100%;
 }
 
-.stats__sponsors {
-  display: flex;
-  overflow-x: scroll;
+.main-carousel {
+  height: 100px;
+  outline: none;
+  width: 100%;
 }
 
-.stats__sponsorContainer {
-  width: 1000px !important;
+.carousel-item {
+  width: 20vw;
+  height: 70px;
+  padding: 10px 0;
+  display: grid;
+  place-items: center;
+  cursor: grab;
 }
 
-.stats__sponsor {
+.carousel-item > img {
+  transition: opacity 0.3s ease;
+}
+
+.carousel-item > img:hover {
+  opacity: 0.5;
+}
+
+.carousel-item:active {
+  cursor: grabbing;
+}
+
+.carousel-item > img {
+  max-height: 40px;
+  max-width: 10vw;
   object-fit: contain;
-  padding: 30px 120px;
-  height: 30px;
+}
+
+@keyframes anim2 {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

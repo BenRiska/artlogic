@@ -1,7 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./ProductSlides.css"
 
 function ProductSlides() {
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.intersectionRatio > 0){
+                    entry.target.style.animation = `anim2 2.5s forwards ease`;
+                } 
+            })
+        })
+
+        const div = document.querySelectorAll(".productSlide__content");
+
+        div.forEach(d => observer.observe(d))
+        
+    }, [])
+
     return (
         <div className="productSlides">
             <div className="productSlide">

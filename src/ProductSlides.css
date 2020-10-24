@@ -8,6 +8,7 @@
 .productSlide {
   background: linear-gradient(180deg, #fff 0, #f8f8f8);
   width: 100vw;
+  margin-bottom: 80px;
 }
 
 .productSlide__content {
@@ -79,4 +80,15 @@
   position: absolute;
   top: 100px;
   right: -400px !important;
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

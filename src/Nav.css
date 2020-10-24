@@ -3,27 +3,134 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background-color: rgb(232, 159, 140);
-  position: sticky;
+  z-index: 2000;
+  height: 30px;
+  position: fixed;
   top: 0;
-  z-index: 50;
+  transition: all 1s ease;
+  width: 98%;
 }
 
 .nav > svg {
   height: 35px;
   fill: #fffee0;
+  align-self: flex-start;
 }
 
 .nav__links {
   display: flex;
+  align-self: flex-start;
   align-items: flex-start;
   height: 100%;
+  max-width: 80vw;
 }
 
-.nav__links > p {
-  padding-left: 20px;
+.nav__links > div {
   font-size: small;
   color: #fffee0;
   font-weight: 600;
   cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.nav__links > div > span {
+  padding: 9px;
+}
+
+.nav__links > div > ul {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+  position: absolute;
+  top: 30px;
+}
+
+.shift-1 {
+  left: -20px;
+}
+
+.shift-2 {
+  left: -70px;
+}
+.shift-3 {
+  left: -50px;
+}
+.shift-4 {
+  left: -60px;
+}
+
+.nav__links > div:hover > ul {
+  display: flex;
+}
+
+.nav__links > div > ul > li {
+  padding: 15px 9px;
+  font-weight: 400;
+  position: relative;
+  min-width: max-content;
+  overflow: visible;
+  opacity: 0;
+}
+
+.nav__links > div > span {
+  display: inline-block;
+  position: relative;
+}
+
+.nav__links > div > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav__links > div > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav__links > div > span:hover::after,
+.nav__links > div > ul > li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav__primary-enter {
+}
+
+.nav__primary-enter-active {
+}
+
+.nav__primary-exit {
+}
+
+.nav__primary-exit-active {
+}
+
+@keyframes anim6 {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

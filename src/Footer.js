@@ -23,10 +23,10 @@ function Footer() {
                         <a href="google.com" target="_blank">Security</a>
                     </div>
                     <div>
-                        <a href="google.com" target="_blank">UK <span>020 7112 8825</span></a>
-                        <a href="google.com" target="_blank">USA <span>(917) 341-2828</span></a>
-                        <a href="google.com" target="_blank">International <span>+44 20 7112 8825</span></a>
-                        <a href="google.com" target="_blank">Email <span>info@artlogic.net</span></a>
+                        <p href="google.com" target="_blank">UK <span>020 7112 8825</span></p>
+                        <p href="google.com" target="_blank">USA <span>(917) 341-2828</span></p>
+                        <p href="google.com" target="_blank">International <span>+44 20 7112 8825</span></p>
+                        <p href="google.com" target="_blank">Email <span>info@artlogic.net</span></p>
                     </div>
                 </div>
                 <div className="footer__icons">

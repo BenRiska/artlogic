@@ -4,9 +4,11 @@
   max-width: 1250px;
   margin-top: 80px;
   background-color: white;
+  z-index: 10000;
 }
 
 .products__header {
+  padding-top: 40px;
 }
 
 .products__header > p,
@@ -36,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 
 .products__product > img {
@@ -64,4 +67,16 @@
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 130px;
+  cursor: pointer;
+}
+
+@keyframes anim3 {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,14 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import "./Banner.css"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import PauseIcon from '@material-ui/icons/Pause';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 const images = ["https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy/ws-artlogicaspect/usr/library/images/main/main_slideshow_slides/1/edorh_mutu_vk5a6404.jpg", "https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy/ws-artlogicaspect/usr/library/images/main/main_slideshow_slides/1/tommy-clarke-cropped-2.jpg", "https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy/ws-artlogicaspect/usr/library/images/main/2/img_1452.jpg", "https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy/ws-artlogicaspect/usr/library/images/main/4/heidi-bucher-artist-estate.jpg", "https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy/ws-artlogicaspect/usr/images/main_slideshow_slides/images/5/stocksy_txpb46fa1af7hk200_large_1624197-copy.jpg"]
 
 function Banner() {
-
-    const [paused, setPaused] = useState(false)
 
     useEffect(() => {
 
@@ -30,9 +26,6 @@ function Banner() {
     return (
         <div className="banner">
             <div className="banner__slides">
-                <div className="pauseSlide">
-                    {paused ? <PauseIcon onClick={() => setPaused(!paused)}/> : <PlayArrowIcon onClick={() => setPaused(!paused)}/>}
-                </div>
                 <div className="banner__slide">
                     <div className="banner__slideImage">
                         <img src={images[0]} alt="banner poster"/>

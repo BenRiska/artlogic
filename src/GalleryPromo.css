@@ -42,7 +42,12 @@
   margin: 50px 0;
 }
 
-.galleryPromo__tabs > button {
+.galleryPromo__tabs-small {
+  display: none;
+}
+
+.galleryPromo__tabs > button,
+.galleryPromo__tabs-small > button {
   margin-right: 20px;
   border: none;
   background-color: transparent;
@@ -68,7 +73,8 @@
 
 .galleryPromo__header > p {
   line-height: 40px;
-  max-width: 90%;
+  padding-top: 10px;
+  max-width: 90vw;
 }
 
 .galleryPromo__links {
@@ -93,4 +99,73 @@
   color: #ae6356;
   font-weight: bold;
   cursor: pointer;
+}
+
+@keyframes anim8 {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .galleryPromo__content {
+    flex: 0.6;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .galleryPromo__tabs-small {
+    display: initial;
+    margin-top: 30px;
+  }
+
+  .galleryPromo__container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .galleryPromo__image {
+    position: relative;
+    left: initial;
+  }
+
+  .galleryPromo__image > img {
+    max-height: 500px;
+    width: 90vw;
+    object-fit: cover;
+  }
+  .galleryPromo__tabs {
+    display: none;
+  }
+
+  .galleryPromo__content {
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .galleryPromo__header > p {
+    margin-top: 10px;
+  }
+
+  .galleryPromo__links {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .galleryPromo__header > p {
+    line-height: 30px;
+  }
+
+  .galleryPromo__linksContainer > button {
+    padding-bottom: 10px;
+  }
 }

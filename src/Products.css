@@ -9,6 +9,8 @@
 
 .products__header {
   padding-top: 40px;
+  max-width: 85vw;
+  margin: 0 auto;
 }
 
 .products__header > p,
@@ -25,12 +27,13 @@
 .products__header > p {
   font-size: 20px;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .products__container {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .products__product {
@@ -80,3 +83,20 @@
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 930px) {
+  .products__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .products__container {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .products__product > button {
+    margin-bottom: 0px;
+  }
+} ;

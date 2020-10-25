@@ -5,6 +5,7 @@
 .contact__content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .contact__content > h2 {
@@ -52,9 +53,10 @@ form > textarea {
 .form__optionsContainer {
   display: flex;
   width: 100%;
-  justify-content: space-around;
   max-width: 600px;
   padding: 20px 0;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .form__checkbox {
@@ -81,8 +83,9 @@ form > textarea {
 
 .form__submit > button {
   width: 800px;
-  max-width: 100%;
-  padding: 14px 40px;
+  max-width: 70vw;
+  max-height: 50px;
+  padding: 15px;
   background-color: black;
   color: white;
   margin-right: 30px;
@@ -94,6 +97,7 @@ form > textarea {
 .form__submit > p {
   color: darkgray;
   font-size: 13px;
+  line-height: 25px;
 }
 
 .active-input {
@@ -112,5 +116,18 @@ form > textarea {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form__inputs {
+    grid-template-columns: 1fr;
+  }
+  .form__submit {
+    flex-direction: column;
+  }
+
+  .form__submit > button {
+    margin-bottom: 30px;
   }
 }

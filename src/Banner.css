@@ -20,6 +20,7 @@
   justify-content: space-around;
   align-items: center;
   position: relative;
+  max-height: calc(100vh - 100px) !important;
 }
 
 .banner__slide {
@@ -42,6 +43,7 @@
   width: 40vh;
   min-width: 250px;
   height: 100%;
+  max-width: 90vw;
 }
 
 .banner__slideImage > div {
@@ -85,6 +87,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
 }
 
 .banner__scroll > .MuiSvgIcon-root {
@@ -118,5 +121,36 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .banner__slideImage > div {
+    font-size: 11vw;
+    max-width: 90vw;
+  }
+
+  .banner__slideHeader > span {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slideText {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .banner__slide {
+    margin-top: 90px;
+  }
+
+  .banner__slideImage > img {
+    min-width: 200px;
+    width: 30vh;
+  }
+  .banner__slideHeader {
+    padding: 15px;
   }
 }

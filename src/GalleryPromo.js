@@ -1,9 +1,30 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./GalleryPromo.css"
 
 function GalleryPromo() {
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.intersectionRatio > 0){
+                    entry.target.style.animation = `anim8 2.5s forwards ease`;
+                } 
+            })
+        })
+
+        const div = document.querySelectorAll(".galleryPromo__header");
+
+        div.forEach(d => observer.observe(d))
+        
+    }, [])
+
     return (
         <div className="galleryPromo">
+            <div className="galleryPromo__tabs-small">
+                <button className="galleryPromo__tab--active">For galleries</button>
+                <button>For artists</button>
+            </div>
             <div className="galleryPromo__container">
                 <div className="galleryPromo__image">
                     <img src="https://artlogic-res.cloudinary.com/w_1000,h_1000,c_limit,f_auto,fl_lossy/ws-artlogicaspect/usr/images/feature_panels/images_and_objects/683/altman-siegel-gallery-cropped.jpg" alt="Claudia Atman-Siegal"/>

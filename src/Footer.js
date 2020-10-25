@@ -45,7 +45,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__copyright">
-            COPYRIGHT © 2020 ARTLOGIC
+            COPYRIGHT © 2020 ARTLOGIC ps: please don't sue me
             </div>
         </div>
     )

@@ -22,7 +22,7 @@ function ProductSlides() {
     return (
         <div className="productSlides">
             <div className="productSlide">
-                <div className="productSlide__content content-left">
+                <div className="productSlide__content reverse-content">
                     <div className="productSlide__info">
                         <h2>Artlogic Database</h2>
                         <p>All you need to run your art business. The world’s leading online art database software with inventory management, CRM and built-in marketing tools that help improve, simplify and streamline your systems, allowing you to focus on the things that matter most.</p>
@@ -46,7 +46,7 @@ function ProductSlides() {
                 </div>
             </div>
             <div className="productSlide">  
-            <div className="productSlide__content content-left">
+            <div className="productSlide__content reverse-content">
                 <div className="productSlide__info">
                     <h2>Online Viewing Rooms</h2>
                     <p>Collect invaluable user data and sales leads from potential collectors in return for exclusive access to time-sensitive online exhibitions, artworks and content.</p>
@@ -69,8 +69,8 @@ function ProductSlides() {
                 </div>
                 </div>
             </div>
-            <div className="productSlide">  
-            <div className="productSlide__content content-left">
+            <div className="productSlide slide-margin">  
+            <div className="productSlide__content reverse-content content-left">
                 <div className="productSlide__support">
                     <h2>Dedicated support for when you need it.</h2>
                     <p>We work with thousands of clients in 70 countries and our client team is always on hand to help. Our Support Website also has hundreds of guides and videos to help you get the most out of our products.</p>

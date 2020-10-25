@@ -8,7 +8,78 @@
   position: fixed;
   top: 0;
   transition: all 1s ease;
-  width: 98%;
+  width: 100%;
+}
+
+.nav__burger {
+  position: absolute;
+  right: 90px;
+  top: 35px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+}
+
+.nav__burger > p {
+  font-weight: 500;
+  font-weight: 10px;
+  color: #fffee0;
+  margin-right: 15px;
+}
+
+.nav__burgerBtn {
+  width: 23px;
+  height: 7px;
+  border-top: 2px solid #fffee0;
+  border-bottom: 2px solid #fffee0;
+}
+
+.nav__smallScreen {
+  position: absolute;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  top: 0px;
+  right: -300px;
+  background-color: black;
+  padding: 20px 25px;
+  height: 100vh;
+  max-width: 200px;
+  transition: all 0.5s ease-in-out;
+}
+
+.navOpen {
+  right: 50px;
+}
+
+.navOpen > ul {
+  display: initial !important;
+}
+
+.nav__exitContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 15px;
+}
+
+.nav__smallScreen > ul {
+  list-style: none;
+  width: 80%;
+  margin-top: 50px;
+  margin-right: auto;
+  padding-left: 10px;
+  display: none;
+}
+
+.nav__smallScreen > ul > li {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
 }
 
 .nav > svg {
@@ -23,6 +94,7 @@
   align-items: flex-start;
   height: 100%;
   max-width: 80vw;
+  margin-right: 50px;
 }
 
 .nav__links > div {
@@ -134,3 +206,18 @@
     opacity: 1;
   }
 }
+
+@media only screen and (min-width: 1020px) {
+  .nav__burger {
+    display: none;
+  }
+  .nav__smallScreen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1019px) {
+  .nav__links {
+    display: none;
+  }
+} ;
